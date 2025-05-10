@@ -1,0 +1,50 @@
+name: Crash Report
+description: File a crash report.
+title: "[Crash]: "
+labels: ["Needs Review"]
+projects: ["Dimension-Delvers/2"]
+type: "Crash"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this crash report!
+  - type: input
+    id: contact
+    attributes:
+      label: Discord username
+      description: What is your discord username, in case we need more info?
+      placeholder: ex. attackeight
+    validations:
+      required: false
+  - type: textarea
+    id: repro-steps
+    attributes:
+      label: Reproduction Steps
+      description: Please give detailed steps on how to encounter the bug!
+      placeholder: Steps
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of the mod are you running?
+      options:
+        - 0.1.0 (MVP)
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant crash report
+      description: Please upload your crash report to [mclo.gs](https://mclo.gs) and paste the link here
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Dimension-Delvers/dimension-delvers-mod/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
