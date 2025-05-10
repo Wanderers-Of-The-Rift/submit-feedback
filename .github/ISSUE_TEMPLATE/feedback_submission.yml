@@ -1,0 +1,45 @@
+name: Feedback Submission
+description: Submit another type of feedback to the mod
+title: "[Feat]: "
+labels: ["Needs Review"]
+projects: ["Dimension-Delvers/2"]
+type: "Feature"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feedback submission!
+  - type: input
+    id: contact
+    attributes:
+      label: Discord username
+      description: What is your discord username, in case we need more info?
+      placeholder: ex. attackeight
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What do you Suggest?
+      description: Please explain what you want to see changed and why
+      placeholder: Tell us what you think!
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of the mod are you running?
+      options:
+        - 0.1.0 (MVP)
+      default: 0
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/Dimension-Delvers/dimension-delvers-mod/blob/main/CODE_OF_CONDUCT.md). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
