@@ -10,5 +10,5 @@ jobs:
       uses: lando/transfer-issue-action@v2
       with:
         token: ${{ secrets.SECRET_TOKEN }}
-        router: Confirmed:dimension-delvers-mod
+        router: confirmed-dev:dimension-delvers-mod
         create_stub: true
