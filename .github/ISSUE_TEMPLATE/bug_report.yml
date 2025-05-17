@@ -40,7 +40,8 @@ body:
       description: What version of the mod are you running?
       options:
         - 0.1.0 (MVP)
-      default: 0
+        - 0.1.1
+      default: 1
     validations:
       required: true
   - type: textarea
