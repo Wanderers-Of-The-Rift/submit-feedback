@@ -10,5 +10,5 @@ jobs:
       uses: lando/transfer-issue-action@v2
       with:
         token: ${{ secrets.SECRET_TOKEN }}
-        router: confirmed-dev:wotr
+        router: confirmed-dev:wotr-mod
         create_stub: true
