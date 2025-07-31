@@ -5,10 +5,15 @@ on:
 jobs:
   transfer_issue:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        router:
+          - confirmed-dev:wotr-mod
+          - confirmed-build:botr
     steps:
     - name: Transfer Issue & Create Stub
       uses: lando/transfer-issue-action@v2
       with:
         token: ${{ secrets.SECRET_TOKEN }}
-        router: confirmed-dev:wotr-mod
+        router: ${{ matrix.router }}
         create_stub: true
