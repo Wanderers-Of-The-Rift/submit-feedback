@@ -10,6 +10,7 @@ jobs:
         router:
           - confirmed-dev:wotr-mod
           - confirmed-build:botr
+          - confirmed-pack:potr
     steps:
     - name: Transfer Issue & Create Stub
       uses: lando/transfer-issue-action@v2
