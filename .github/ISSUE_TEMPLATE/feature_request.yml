@@ -1,14 +1,14 @@
-name: Feedback Submission
-description: Submit another type of feedback to the mod
-title: "[Feed]: "
+name: Feature Request
+description: Request a feature to be added to the mod
+title: "[Feat]: "
 labels: ["Needs Review"]
 projects: ["Dimension-Delvers/2"]
-type: "Feedback"
+type: "Feature"
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this feedback submission!
+        Thanks for taking the time to fill out this feature request!
   - type: input
     id: contact
     attributes:
@@ -21,7 +21,7 @@ body:
     id: suggestion
     attributes:
       label: What do you Suggest?
-      description: Please explain what you want to see changed and why
+      description: Please explain what you want to see added and why
       placeholder: Tell us what you think!
     validations:
       required: true
