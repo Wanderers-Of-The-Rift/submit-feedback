@@ -1,7 +1,7 @@
 name: Feature Request
 description: Request a feature to be added to the mod
 title: "[Feat]: "
-labels: ["Needs Review"]
+labels: ["needs-review"]
 projects: ["Dimension-Delvers/2"]
 type: "Feature"
 body:

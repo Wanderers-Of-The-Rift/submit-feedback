@@ -1,7 +1,7 @@
 name: Feedback Submission
 description: Submit another type of feedback to the mod
 title: "[Feed]: "
-labels: ["Needs Review"]
+labels: ["needs-review"]
 projects: ["Dimension-Delvers/2"]
 type: "Feedback"
 body:
