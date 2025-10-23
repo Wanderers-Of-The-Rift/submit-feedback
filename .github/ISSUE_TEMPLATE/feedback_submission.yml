@@ -1,5 +1,5 @@
 name: Feedback Submission
-description: Submit another type of feedback to the mod
+description: Submit another type of feedback to the mod, such as a ui/ux suggestion or design ideas
 title: "[Feed]: "
 labels: ["needs-review"]
 projects: ["Dimension-Delvers/2"]
